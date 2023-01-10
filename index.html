@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Yanay Kolodny - Portfolio</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet"
+    type="text/css">
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- BACK TO TOP ARROW -->
+  <a class="smoothScroll" href="#welcome"><img id="btt" class="img-responsive" src="./assets/scroll-up.png"></a>
+
+  <!-- NAV -->
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a class="smoothScroll" href="#welcome" onclick="closeNav()">Home</a>
+      <a class="smoothScroll" href="#about" onclick="closeNav()">About</a>
+      <a class="smoothScroll" href="#portfolio" onclick="closeNav()">Portfolio</a>
+      <a class="smoothScroll" href="#form" onclick="closeNav()">Contact Me</a>
+    </div>
+
+  </div>
+
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <span id="openmenu" onclick="openNav()"><b>Menu</b></span>
+
+  <center>
+    <!-- WELCOME -->
+    <div id="welcome">
+      <h1>Yanay Kolodny</h1>
+      <h3><b>Web Developer</b></h3>
+      <a class="smoothScroll" href="#about">
+        <button class="glow-on-hover" type="button">
+          About Me
+        </button>
+      </a>
+    </div>
+  </center>
+
+  <!-- ABOUT -->
+  <div id="about">
+    <div class="slide-in">
+      <h1>About Me</h1>
+      <center>
+        <div id="self">
+          <img class="img-responsive" src="./assets/Yanay.jpeg">
+        </div>
+      </center>
+      <br>
+      <p>Hi there! I'm Yanay, a web developer based in Jaffa, Israel.<br><br>
+        I'm passionate about building websites that provide a refreshing and satisfying user experience.<br><br>
+        When i'm not coding, I enjoy music, yoga, and spending time with my partner and cat.<br><br>
+        If you'd like, you can check out some of my previous work below.<br><br>
+        Want to work together? I’d love to hear from you!
+      </p>
+      <br><br><br><br><br>
+      <span id="portScroll">
+        <a class="smoothScroll" href="#portfolio"><img src="./assets/portfolio.png"> View My
+          Portfolio</a></span>
+      <span id="portScroll"><a class="smoothScroll" href="#form">
+          <img src="./assets/email.png">&nbsp; Contact Me</a></span>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <div id="portfolio">
+    <h1>Portfolio</h1>
+    <h3>Here you'll find some projects I've worked on! Click on a project to go to it's GitHub repository.</h3>
+    <center>
+      <div id="fullpage">
+        <div class="section">
+          <div class="content-slide">
+
+            <div class="slide">
+              <h2>The Farmer's Market Online</h2>
+              <p>A Django & React Web Aplication</p>
+              <a href="https://github.com/YanayKolodny/Farmers_Market-Django_React-Course_Graduation_Project"
+                target=”_blank”>
+                <img data-src="./assets/FarmersMarket.png">
+              </a>
+            </div>
+
+            <div class="slide">
+              <h2>Personal Portfolio</h2>
+              <p>An HTML - CSS - Javascript web page</p>
+              <img data-src="./assets/PortfolioPage.png" alt="">
+            </div>
+
+            <div class="slide">
+              <h2>More Exciting Projects Coming Soon...</h2>
+              <p>Stay tuned for updates!</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </center>
+  </div>
+
+  <script src="./script.js"></script>
+  <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
+
+  <!-- Contact Form -->
+  <div id="form">
+    <h1>Contact Me:</h1>
+    <div class="fish" id="fish"></div>
+    <div class="fish" id="fish2"></div>
+    <div class="fish" id="fish3"></div>
+
+
+    <form id="waterform" action="https://formsubmit.co/yanay.kolodny@gmail.com" method="post">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/thank-you-page/thankyou.html">
+      <input type="hidden" name="_subject" value="New Eamil From Your Personal Web-Page!">
+      <input type="hidden" name="_autoresponse"
+        value="I really apritiate you're contacting me on my personal page and will replay as soon as possible.">
+
+
+      <div class="formgroup" id="name-form">
+        <label for="name">Your name*</label>
+        <input type="text" id="name" name="name" />
+      </div>
+
+      <div class="formgroup" id="email-form">
+        <label for="email">Your e-mail*</label>
+        <input type="email" id="email" name="email" />
+      </div>
+
+      <div class="formgroup" id="message-form">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+
+      <input type="submit" value="Send your message!" />
+    </form>
+  </div>
+
+</body>
+
+</html>
