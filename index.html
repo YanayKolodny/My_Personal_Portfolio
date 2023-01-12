@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./style.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
@@ -51,7 +52,7 @@
 
   <!-- ABOUT -->
   <div id="about">
-    <div class="slide-in">
+    <div class="aboutContainer">
       <h1>About Me</h1>
       <center>
         <div id="self">
@@ -65,12 +66,22 @@
         If you'd like, you can check out some of my previous work below.<br><br>
         Want to work together? I’d love to hear from you!
       </p>
+
       <br><br><br><br><br>
+
       <span id="portScroll">
-        <a class="smoothScroll" href="#portfolio"><img src="./assets/portfolio.png"> View My
-          Portfolio</a></span>
-      <span id="portScroll"><a class="smoothScroll" href="#form">
-          <img src="./assets/email.png">&nbsp; Contact Me</a></span>
+        <a class="smoothScroll" href="#portfolio">
+          <img src="./assets/portfolio.png">
+          My Works
+        </a>
+      </span>
+
+      <span id="portScroll">
+        <a class="smoothScroll" href="#form">
+          <img src="./assets/email.png" id="emailIcon">
+          Contact Me
+        </a>
+      </span>
     </div>
   </div>
 
@@ -83,6 +94,7 @@
         <div class="section">
           <div class="content-slide">
 
+            <!-- The Farmer's Market Online -->
             <div class="slide">
               <h2>The Farmer's Market Online</h2>
               <p>A Django & React Web Aplication</p>
@@ -90,14 +102,42 @@
                 target=”_blank”>
                 <img data-src="./assets/FarmersMarket.png">
               </a>
+
+              <div id="projBtnsContainer">
+                <a href="https://farmersmarketonline.netlify.app" target="_blank" rel="noopener noreferrer">
+                  <div class="buttonLink" id="buttonProject">
+                    <div id="dub-arrow"><img src="assets/live-demo-arrow.png" alt="" /></div>
+                    Live Demo
+                  </div>
+                </a>
+
+                <a href="https://github.com/YanayKolodny/Farmers_Market-Django_React-Course_Graduation_Project"
+                  target="_blank" rel="noopener noreferrer">
+                  <div class="buttonLink" id="buttonProject">
+                    <div id="dub-arrow"><img src="assets/github.png" alt="" /></div>
+                    Project's Git
+                  </div>
+                </a>
+              </div>
             </div>
 
+            <!-- Personal Portfolio -->
             <div class="slide">
               <h2>Personal Portfolio</h2>
               <p>An HTML - CSS - Javascript web page</p>
               <a href="https://github.com/YanayKolodny/My_Personal_Portfolio" target=”_blank”>
                 <img data-src="./assets/PortfolioPage.png" alt="">
               </a>
+
+              <div id="projBtnsContainer">
+                <a href="https://github.com/YanayKolodny/Farmers_Market-Django_React-Course_Graduation_Project"
+                  target="_blank" rel="noopener noreferrer">
+                  <div class="buttonLink" id="buttonProject">
+                    <div id="dub-arrow"><img src="assets/github.png" alt="" /></div>
+                    Project's Git
+                  </div>
+                </a>
+              </div>
             </div>
 
             <div class="slide">
@@ -126,7 +166,7 @@
 
     <form id="waterform" action="https://formsubmit.co/yanay.kolodny@gmail.com" method="post">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/thank-you-page/thankyou.html">
+      <input type="hidden" name="_next" value="https://yanaykolodny.netlify.app/pages/thank-you-page/thankyou.html">
       <input type="hidden" name="_subject" value="New Eamil From Your Personal Web-Page!">
       <input type="hidden" name="_autoresponse"
         value="I really apritiate you're contacting me on my personal page and will replay as soon as possible.">
@@ -149,6 +189,17 @@
 
       <input type="submit" value="Send your message!" />
     </form>
+    <div class="socialBtnsContainer">
+      <a class="btnSocialLink" href="https://www.linkedin.com/in/yanay-kolodny">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="btnSocialLink" href="https://github.com/YanayKolodny">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="btnSocialLink" href="https://www.facebook.com/yanay.kolodny">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </div>
   </div>
 
 </body>

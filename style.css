@@ -4,217 +4,7 @@ body {
   background-color: #68bdca;
 }
 
-/* BACK TO TOP BUTTON*/
-
-#btt {
-  position: fixed;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  bottom: 0;
-  right: 0;
-  opacity: 0.8;
-  width: 3.5%;
-  transition: margin-bottom 0.6s, opacity 0.6s;
-  z-index: 1;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
-}
-
-#btt:hover {
-  margin-bottom: 20px;
-  opacity: 1;
-  transition: margin-bottom 0.6s, opacity 0.6s;
-  z-index: 1;
-  width: 4.3%;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
-}
-
-/* WELCOME */
-
-#welcome {
-  font-family: "Amatic SC", cursive;
-  color: #fcffff;
-  background: url("./assets//20170503_111837.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: auto;
-  padding: 5% 5% 5% 5%;
-}
-
-#welcome h1 {
-  position: relative;
-  top: -8vh;
-  font-size: 9rem;
-  font-weight: bold;
-}
-
-#welcome h3 {
-  position: relative;
-  top: -10.5vh;
-  font-size: 4.5rem;
-}
-
-/* DOWN ARROW */
-
-#press {
-  width: 60px;
-  border: solid 4px white;
-  border-radius: 40px;
-  margin-top: 20%;
-  transition: background-color 0.6s, opacity 0.6s, margin-top 1s;
-}
-
-#press:hover {
-  background-color: #5bc2b4;
-  opacity: 0.8;
-  margin-top: 21%;
-  transition: background-color 0.6s, opacity 0.6s, margin-top 1s;
-}
-
-/* ABOUT */
-
-#about {
-  background-color: #0a3739;
-  padding: 5% 5% 5% 5%;
-  height: 100vh;
-  width: auto;
-}
-
-#about h1 {
-  font-family: "Amatic SC", cursive;
-  font-size: 40pt;
-  font-weight: bold;
-  text-align: left;
-}
-
-#about p {
-  text-align: left;
-  font-size: large;
-}
-
-#about #email_address img {
-  text-align: left;
-  width: 27px;
-}
-
-#email_address {
-  background-color: #26816e;
-  padding: 2% 2% 2% 2%;
-  border-radius: 40px;
-  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
-  font-size: large;
-}
-
-#portScroll {
-  font-size: large;
-  background-color: #26816e;
-  padding: 2% 2% 2% 2%;
-  border-radius: 40px;
-  margin-left: 2%;
-  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
-}
-
-#about #portScroll img {
-  text-align: left;
-  margin-right: 5px;
-  width: 30px;
-}
-
-#portScroll a,
-#portScroll a:hover {
-  color: white;
-  text-decoration: none;
-}
-
-#email_address:hover,
-#portScroll:hover {
-  box-shadow: 5px 15px 30px #062928;
-  background-color: #1a616c;
-  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
-  cursor: pointer;
-}
-
-#self img {
-  width: 25%;
-  position: relative;
-  float: right;
-  right: 6%;
-  border: solid 8px #26816e;
-  border-radius: 2000px;
-  box-shadow: 5px 15px 30px #062928;
-}
-
-/* PORTFOLIO */
-
-#portfolio {
-  position: relative;
-  background-color: #68bdca;
-  text-decoration: none;
-  color: white;
-  padding: 3% 3% 3% 3%;
-  width: auto;
-  height: 100vh;
-}
-
-/* main and second portfolio section titles: */
-#portfolio h1 {
-  font-family: "Severn Sans Serif Font Family";
-  font-size: 55pt;
-  font-weight: 500;
-  text-align: left;
-  margin-bottom: -1%;
-}
-
-#portfolio h3 {
-  font-family: "optima";
-  font-size: 18pt;
-}
-
-/* Project Slide titles: */
-#portfolio h2 {
-  font-family: "Severn Sans Serif Font Family";
-  font-size: 32pt;
-  color: #ff6363;
-  margin-bottom: -0.1%;
-  margin-top: 2%;
-}
-
-#portfolio p {
-  font-family: "Severn Sans Serif Font Family";
-  font-size: 18pt;
-  font-weight: 100;
-  color: #484848;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-text-size-adjust: 100%;
-}
-
-/* portfolio project section */
-
-.content-slide {
-  position: relative;
-  margin: auto;
-  top: -18%;
-}
-
-.content-slide img {
-  max-width: 50%;
-  max-height: 50%;
-}
-
-.fp-controlArrow.fp-next {
-  border-color: transparent transparent transparent #ff6363 !important;
-  right: 45px !important;
-}
-
-.fp-controlArrow.fp-prev {
-  border-color: transparent #ff6363 transparent transparent !important;
-  left: 45px !important;
-}
-
-/* NAV */
-
+/* MENU - NAVBAR */
 #openmenu {
   font-family: "Amatic SC", cursive;
   font-size: 20pt;
@@ -315,6 +105,58 @@ body {
   }
 }
 
+/* BACK TO TOP BUTTON*/
+#btt {
+  position: fixed;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  bottom: 0;
+  right: 0;
+  opacity: 0.8;
+  width: 3.5%;
+  transition: margin-bottom 0.6s, opacity 0.6s;
+  z-index: 1;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+#btt:hover {
+  margin-bottom: 20px;
+  opacity: 1;
+  transition: margin-bottom 0.6s, opacity 0.6s;
+  z-index: 1;
+  width: 4.3%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+/* WELCOME */
+
+#welcome {
+  font-family: "Amatic SC", cursive;
+  color: #fcffff;
+  background: url("./assets//20170503_111837.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  padding: 5% 5% 5% 5%;
+}
+
+#welcome h1 {
+  position: relative;
+  top: -8vh;
+  font-size: 9rem;
+  font-weight: bold;
+}
+
+#welcome h3 {
+  position: relative;
+  top: -10.5vh;
+  font-size: 4.5rem;
+}
+
+/* ABOUT ME BUTTON */
 .glow-on-hover {
   margin-top: 20%;
   width: 120px;
@@ -394,24 +236,241 @@ body {
   }
 }
 
+/* ABOUT ME SECTION */
+#about {
+  background-color: #0a3739;
+  padding: 5% 5% 5% 5%;
+  height: 100vh;
+  width: auto;
+}
+.aboutContainer {
+  position: relative;
+  top: 8%;
+}
+
+#about h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 40pt;
+  font-weight: bold;
+  text-align: left;
+}
+
+#about p {
+  text-align: left;
+  font-size: large;
+}
+
+#about #email_address img {
+  text-align: left;
+  width: 27px;
+}
+
+#email_address {
+  background-color: #26816e;
+  padding: 2% 2% 2% 2%;
+  border-radius: 40px;
+  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+  font-size: large;
+}
+
+#portScroll {
+  font-size: large;
+  background-color: #26816e;
+  padding: 2% 2% 2% 2%;
+  border-radius: 40px;
+  margin-left: 2%;
+  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+}
+
+#about #portScroll img {
+  text-align: left;
+  margin-right: 5px;
+  width: 30px;
+}
+
+#portScroll a,
+#portScroll a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#email_address:hover,
+#portScroll:hover {
+  box-shadow: 5px 15px 30px #062928;
+  background-color: #1a616c;
+  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+  cursor: pointer;
+}
+
+#self img {
+  width: 25%;
+  position: relative;
+  float: right;
+  right: 6%;
+  border: solid 8px #26816e;
+  border-radius: 2000px;
+  box-shadow: 5px 15px 30px #062928;
+}
+
+#emailIcon {
+  position: relative;
+  top: -3px;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+  position: relative;
+  background-color: #68bdca;
+  text-decoration: none;
+  color: white;
+  padding: 3% 3% 3% 3%;
+  width: auto;
+  height: 100vh;
+}
+
+/* main and second portfolio section titles: */
+#portfolio h1 {
+  font-family: "Severn Sans Serif Font Family";
+  font-size: 55pt;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: -1%;
+}
+
+#portfolio h3 {
+  font-family: "optima";
+  font-size: 18pt;
+}
+
+/* Project Slide titles: */
+#portfolio h2 {
+  font-family: "Severn Sans Serif Font Family";
+  font-size: 32pt;
+  color: #ff6363;
+  margin-bottom: -0.1%;
+  margin-top: 2%;
+}
+
+#portfolio p {
+  font-family: "Severn Sans Serif Font Family";
+  font-size: 18pt;
+  font-weight: 100;
+  color: #484848;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* portfolio project section */
+
+.content-slide {
+  position: relative;
+  margin: auto;
+  top: -16%;
+}
+
+.content-slide img {
+  position: relative;
+  max-width: 45%;
+  max-height: 45%;
+  border-radius: 2%;
+  top: 2%;
+}
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent #ff6363 !important;
+  right: 45px !important;
+}
+
+.fp-controlArrow.fp-prev {
+  border-color: transparent #ff6363 transparent transparent !important;
+  left: 45px !important;
+}
+
+/* Project Link Buttons */
+
+#projBtnsContainer {
+  position: relative;
+  top: 2%;
+}
+
+.buttonLink {
+  display: inline-flex;
+  min-height: 50px;
+  width: 150px;
+  border: 2px solid #ffffff;
+  margin: 20px 20px 20px 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#projBtnsContainer a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Link Button */
+
+#buttonProject {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#buttonProject a {
+  position: relative;
+  left: 0;
+  transition: all 0.35s ease-Out;
+}
+
+#dub-arrow {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  left: -200px;
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease-Out;
+  bottom: 0;
+}
+
+#buttonProject img {
+  width: 20px;
+  height: auto;
+}
+
+#buttonProject:hover #dub-arrow {
+  left: 0;
+}
+
+#buttonProject:hover a {
+  left: 150px;
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 2.2em;
+  }
+  #container {
+    width: 50%;
+  }
+}
+
 /* Contact Form */
 
 @import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
 
-/* Animation webkit */
-@-webkit-keyframes myfirst {
-  0% {
-    margin-left: -235px;
-  }
-  90% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: 100%;
-  }
-}
-
-/* Animation */
+/* Fish Animations */
 @keyframes myfirst {
   0% {
     margin-left: -235px;
@@ -439,7 +498,7 @@ body {
 }
 
 #fish {
-  top: 15%;
+  top: 13%;
 }
 
 #fish2 {
@@ -461,10 +520,15 @@ body {
   position: relative;
 }
 
+#waterform {
+  position: relative;
+  top: -7%;
+}
+
 #form h1 {
   font-size: 52px;
-  padding-left: 5%;
-  padding-top: 4%;
+  padding-left: 4%;
+  padding-top: 3%;
 }
 
 form {
@@ -491,19 +555,17 @@ textarea {
   font-family: "Sniglet", cursive;
   font-size: 1.5em;
   color: #676767;
-  transition: border 0.5s;
-  -webkit-transition: border 0.5s;
-  -moz-transition: border 0.5s;
-  -o-transition: border 0.5s;
-  border: solid 3px #98d4f3;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  box-shadow: 0 5px 15px -5px #00000070;
+  background-color: #ffffffbb;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
 }
 
 input:focus,
 textarea:focus {
-  border: solid 3px #77bde0;
+  background-color: #ffffff;
 }
 
 textarea {
@@ -560,4 +622,70 @@ label {
 .formgroup-error {
   background-image: url("http://www.geertjanhendriks.nl/codepen/form/octo-error.png");
   color: red;
+}
+
+/* Social Media Links */
+
+.socialBtnsContainer {
+  position: relative;
+  top: 5%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.btnSocialLink {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+
+.btnSocialLink i {
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+
+.btnSocialLink:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.btnSocialLink::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.btnSocialLink:hover::before {
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes aaa {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
 }
